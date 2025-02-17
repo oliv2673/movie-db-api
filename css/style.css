@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+
+    h1 {
+        font-family: "Roboto Slab", serif;
+        font-weight: 900;
+        color: white;
+        background-color: rgb(61, 30, 61);
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(109, 35, 35);
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 1rem 1rem;
+            font-weight: 300;
+        }
+    }
+}
+
+main {
+    margin: auto;
+
+    article {
+        border: 0.2rem solid rgb(81, 39, 87);
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        background-color: rgb(81, 39, 87);
+
+        h3 {
+            padding: 0.5rem 1rem;
+            font-family: "Roboto Slab", serif;
+            font-weight: 700;
+            font-size: 2rem;
+
+            color: white;
+        }
+
+        div {
+            /* display: flex; */
+            background-color: white;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+
+            img {
+                display: block;
+                margin: auto;
+                max-width: 30%;
+            }
+
+            .con {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+
+        nav {
+
+            flex-direction: row;
+        }
+    }
+
+    main {
+        max-width: 1000px;
+
+        article {
+
+            div {
+                display: flex;
+                flex-direction: row;
+
+            }
+        }
+    }
+}
