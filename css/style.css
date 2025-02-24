@@ -30,6 +30,11 @@ header {
             color: white;
             padding: 1rem 1rem;
             font-weight: 300;
+
+        }
+
+        h2:hover {
+            cursor: pointer;
         }
     }
 }
@@ -64,6 +69,7 @@ main {
                 display: block;
                 margin: auto;
                 max-width: 30%;
+                border-bottom-left-radius: 1rem;
             }
 
             .con {
@@ -74,10 +80,13 @@ main {
 
                 p {
                     font-family: Arial, Helvetica, sans-serif;
+                }
 
+                .bold {
+                    font-weight: 600;
 
                     span {
-                        font-weight: 600;
+                        font-weight: 300;
                     }
                 }
             }

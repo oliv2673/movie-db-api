@@ -13,32 +13,37 @@
     <header>
         <h1>The Movie Database</h1>
         <nav>
-            <h2>Now Playing</h2>
-            <h2>Popular</h2>
-            <h2>Top Rated</h2>
-            <h2>Upcomming</h2>
+            <h2 data-category="now_playing">Now Playing</h2>
+            <h2 data-category="popular">Popular</h2>
+            <h2 data-category="top_rated">Top Rated</h2>
+            <h2 data-category="upcoming">Upcoming</h2>
         </nav>
     </header>
     <main>
-        <article>
-            <h3 class="title">Title</h3>
-            <div>
-                <img src="temp.png" alt="">
-                <div class="con">
-                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error optio, possimus
-                        consectetur
-                        libero quae dolore et quia consequatur! Reprehenderit quibusdam commodi est saepe quis laborum
-                        aliquam alias eaque illum odio?</p>
+        <section id="movie-list">
 
-                    <p class="ogtitle"><span>Original title: </span>OG title</p>
-                    <p class="date"><span>Release date: </span>2024-07-24</p>
-                </div>
-            </div>
-        </article>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+<template id="movie-card">
+    <article>
+        <h3 class="title">Title</h3>
+        <div>
+            <img src="" alt="">
+            <div class="con">
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error optio, possimus
+                    consectetur
+                    libero quae dolore et quia consequatur! Reprehenderit quibusdam commodi est saepe quis laborum
+                    aliquam alias eaque illum odio?</p>
+
+                <p class="bold">Original title: <span class="ogtitle"></span></p>
+                <p class="bold">Release date: <span class="date"></span></p>
+            </div>
+        </div>
+    </article>
+</template>
 
 </html>
